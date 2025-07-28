@@ -12,12 +12,12 @@ function App() {
     setIsVisible(!isVisible)
   }
   return (
-   <div className=" w-70 mx-auto bg-white p-8 border-2">
+   <div className=" w-80 mx-auto bg-white border-2 rounded-4xl">
 
-    <img src={image} alt='photo' className='w-full object-contain'/>
+    <img src={image} alt='photo' className='w-100 rounded-t-2xl block '/>
 
-    <div className='flex justify-center items-center flex-col m-2'>
-      <h1 className='text-2xl text-bold pt-2'>Cristine Something</h1>
+    <div className='flex justify-center items-center flex-col m-2 text-center'>
+      <h1 className='text-[18px] text-bold pt-2'>Cristine Something</h1>
       <p className='p-2 text-base'>Cyber Security Expert</p>
       {isVisible && <div className=' flex justify-center items-center gap-2 py-4'>
           <div className=' w-5 h-5 rounded-full border-2 p-10 flex justify-center items-center hover:bg-red-500'>
@@ -31,7 +31,7 @@ function App() {
           </div>
       </div>}
       
-      <button className='bg-blue-300 py-6 px-8 bg-red m-8 w-50 rounded-3xl pb-4' onClick={toggleVisibility}>More</button>
+      <button className='bg-blue-300 py-6 px-8 bg-red m-8 w-[80px] rounded-3xl pb-4' onClick={toggleVisibility}>More</button>
     </div>
    
         

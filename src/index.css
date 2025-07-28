@@ -1,4 +1,25 @@
 @import "tailwindcss";
 
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0rem auto;
+
+  background-image: url(../src/images/bg.png);
+  padding: 12px;
+  
+}
+
+
+
 
