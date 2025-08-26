@@ -12,26 +12,26 @@ function App() {
     setIsVisible(!isVisible)
   }
   return (
-   <div className=" w-80 mx-auto bg-white border-2 rounded-4xl">
+   <div className=" w-70 mx-auto bg-white p-[.1rem] border-2 rounded-4xl">
 
-    <img src={image} alt='photo' className='w-100 rounded-t-2xl block '/>
+    <img src={image} alt='photo' className='w-100 rounded-t-4xl block '/>
 
-    <div className='flex justify-center items-center flex-col m-2 text-center'>
-      <h1 className='text-[18px] text-bold pt-2'>Cristine Something</h1>
-      <p className='p-2 text-base'>Cyber Security Expert</p>
-      {isVisible && <div className=' flex justify-center items-center gap-2 py-4'>
-          <div className=' w-5 h-5 rounded-full border-2 p-10 flex justify-center items-center hover:bg-red-500'>
+    <div className='flex justify-center items-center flex-col m-4 text-center'>
+      <h1 className='text-xl font-extrabold antialiased'>Cristine Something</h1>
+      <p className=' text-xs font-medium'>Cyber Security Expert</p>
+      {isVisible && <div className=' flex justify-center items-center gap-6 py-2'>
+          <div className=' w-6 h-6  rounded-full border shadow-2xl flex justify-center items-center hover:bg-red-500'>
               <MdEmail size={12}/>
           </div>
-          <div className=' w-5 h-5 rounded-full border-2 p-4 flex justify-center items-center'>
+          <div className=' w-6 h-6 rounded-full border shadow-2xl flex justify-center items-center'>
             <SiDiscord size={12}/>
           </div>
-          <div className=' w-5 h-5 rounded-full border-2 p-8 flex justify-center items-center'>
+          <div className=' w-6 h-6 rounded-full border shadow-2xl  flex justify-center items-center'>
             <MdPhone size={12}/>
           </div>
       </div>}
       
-      <button className='bg-blue-300 py-6 px-8 bg-red m-8 w-[80px] rounded-3xl pb-4' onClick={toggleVisibility}>More</button>
+      <button className='bg-blue-300 py-2 px-4 text-xs font-medium w-[8rem] mx-auto rounded-4xl text-xs' onClick={toggleVisibility}>More</button>
     </div>
    
         
