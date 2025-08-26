@@ -12,7 +12,7 @@ function App() {
     setIsVisible(!isVisible)
   }
   return (
-   <div className=" w-70 mx-auto bg-white p-[.1rem] border-2 rounded-4xl">
+   <div className=" w-70 mx-auto bg-white p-[.4rem] border-2 rounded-4xl">
 
     <img src={image} alt='photo' className='w-100 rounded-t-4xl block '/>
 
